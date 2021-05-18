@@ -68,7 +68,11 @@ def scalar_function(x, y):
 
 def vector_function(x, y):
     """
-    Make sure vector_function can deal with vector input x,y 
+    Arg:
+        x - h x w array
+        y - h x w array
+    Returns:
+        out - h x w array after the function is operated on the input arrays
     """
     vector_fn=np.vectorize(scalar_function)
     return vector_fn(x,y)
